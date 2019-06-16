@@ -42,6 +42,8 @@ $(document).ready(function(){
 
    var newLocation = new Location(inputEstate,inputPhone);
 
+
+
   
   var comparison = function(){
     var totalPrice = 0;
@@ -96,6 +98,7 @@ $(document).ready(function(){
   comparison();
 
 });
+
   $("#submit").click(function() {
       $(".content1").hide();
       $(".myOrder").show();
@@ -104,6 +107,7 @@ $(document).ready(function(){
   $("#view").click(function(){
     $('h3').text(crustInput.length + newMypizza.fullDetails());
   });
+
   $("#deliver").click(function(){
     $(".myOrder").hide();
     $(".delivering").show();
