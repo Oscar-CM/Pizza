@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+	<title>Pizza Place</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<img src="images/body.png">
+		<div class = whole>
+			<div class="header"> 
+				<p> Best Pizza Place</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6 leftside">
+						<p> Choose your pizza depending on your preference</p><br><br>
+						<form id="form1">
+							<div id="size">
+
+								<h2> Preferred Size</h2>
+								<div id="sizeSelection">
+									<input type="radio" name="size" value="small" id="small"> Small
+									<input type="radio" name="size" value="medium" id="medium"> Medium
+									<input type="radio" name="size" value="large" id="large"> Large
+								</div>
+							</div>
+							<br>
+							<div class="pizza-type">
+								<h2> Pizza type</h2>
+								<div id="typeSelection">
+									<input type="radio" name="type" value="stuffed" id="stuffed"> Stuffed
+									<input type="radio" name="type" value="crusted" id="crusted"> Crusted 
+									<input type="radio" name="type" value="glutten" id="glutten"> Glutten-Free
+								</div>
+
+							</div>
+							<br>
+							<div class="pizza-type">
+								<h2> Pizza Crustings</h2>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" name = "crust" value="Onions" id="onions">Onions
+									</label>
+								</div>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" name = "crust" value="Bacon" id="bacon">Bacon
+									</label>
+								</div>
+								<div class="form-check-inline">
+									<label class="form-check-label">
+										<input type="checkbox" class="form-check-input" name = "crust" value="Pepperoni" id="pepperoni">Pepperoni
+									</label>
+								</div>
+							</div>
+						</form>
+						<br>
+						<button type="button" class="btn btn-outline-primary" id="submit">Submit order</button>
+						<button type="button" class="btn btn-outline-success" id="view">View Totals</button>
+						<h3 style="color: white"></h3>
+
+
+					</div>
+				<div class="col-md-6 rightside">
+					
+						<div class="content1">
+							<h1> Serving is our pleasure!!</h1>
+							<p> We will deliver you a well made pizza depending on your preferences</p>
+							<h2> Thank you!!</h2>
+
+						</div>
+						<div class="myOrder">
+							Here are the details of your pizza
+							<table class=" pimping" >
+								<tr> <td span="2">Your Selections</td></tr>
+								<tr>
+									<td> Size:</td>&nbsp <td id="outputSize"></td>
+								</tr>
+								<tr>
+									<td> Type:</td><td id="outputType"></td>
+								</tr>
+								<tr>
+
+									<td> Crusting:</td><td id="outputCrusting"></td>
+								</tr>
+								<tr>
+									<td> Total cost</td> <td id="price"></td>
+								</tr>
+								<tr>
+									<td></td><td><button type="button" class="btn btn-outline-primary" id="deliver">Deliver</button></td>
+								</tr>
+
+							</table>
+						</div>
+						<div class="delivering">
+							Address:
+							<input type="text" name="adress" placeholder="estate "> <br><br>
+							Phone Number:
+							<input type="Number" name="adress" placeholder=" "> <br><br>
+							<button type="button" class="btn btn-outline-primary" id="deliver"> Have it delivered</button>
+
+
+							
+						</div>
+					</div>
+				
+			
+				
+			</div>
+
+			<div class="footer">
+				<p> We are happy to serve you<br>
+					Call us:  0723566766 <br>
+				Email:    oscarmaritim@gmail.com</p>
+				
+			</div>
+
+			
+		</div>
+
+
+
+
+
+
+
+	</body>
+	</html>
