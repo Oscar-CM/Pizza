@@ -116,7 +116,7 @@ $(document).ready(function(){
 
   });
   $("#deliver-now").click(function(){
-    alert("Your pizza will be delivered, Thank you!" );
+    alert("Your pizza will be delivered. Thank you!" );
     $('.delivering').hide();
     $(".content1").show();
 
