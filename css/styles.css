@@ -94,7 +94,9 @@ button{
 	font-size: 35px;
 	font-weight: 10px;
 }
-
+body{
+	background-color: blue;
+}
 @media screen and (max-width: 800px) {
   .left, .main, .right {
     width: 50%; 
