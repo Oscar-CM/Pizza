@@ -106,13 +106,13 @@ $(document).ready(function(){
 
   $("#submit").click(function() {
       $(".content1").hide();
-      $('#delivering').hide();
+      
       $(".myOrder").show();
 
     });
 
   $("#deliver").click(function(){
-    $(".myOrder").hide();
+    
     $(".delivering").show();
 
   });
