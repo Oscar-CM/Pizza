@@ -22,16 +22,24 @@ The project will allow the pizza buyer to choose the type of pizza they would li
 
 **When one clicks submit button below the form**
 
-* A table should appear to the right with all the details chosen and the total price of the pizza.
+* A table should appear to the right with all the details chosen and the total price of the pizza.The summary form will have a button to allow the user to choose if they want the pizza to be delivered
 
-**When there ar no inputs for the size and type**
+**When there are no inputs for the size and type**
 
 * There should be an alert telling the user to input the values
 
-** The summary form will have a button to allow the user to order**
+**On Clicking the deliver button**
+* The user will be required to fill in a form with their details and the and then click the deliver button
+
+**On clicking the button**
+* The user will receive an alert notifying them that the order will be delivered
+
+**Form appearance**
+* The form hide on the click of the other buttons
+
 
 ## Known bugs
-The icons sizes are affected when one clicks on any of them
+There are no known bugs
 ## Technologies Used
 HTML, CSS, Bootstrap, Javascript and Jquery
 ## Support and contact details
