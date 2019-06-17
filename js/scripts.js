@@ -1,3 +1,5 @@
+//business logic
+
 function MyPizza(size, type){
   this.pizzaSize = size;
   this.pizzaType = type;
@@ -16,6 +18,8 @@ MyPizza.prototype.fullDetails = function(){
 Location.prototype.fullLocation = function(){
   return  this.myEstate + " " + this.myPhone;
 }
+
+// user interface logic
 $(document).ready(function(){
   $('#submit').click(function(){
   var radioValue = $("input[name= size]:checked").val();
@@ -35,7 +39,7 @@ $(document).ready(function(){
   $('#outputSize').html(newMypizza.pizzaSize);
   $('#outputType').html(newMypizza.pizzaType);
 
-   $('h3').text(crustInput.length + newMypizza.fullDetails());
+   $('').text(crustInput.length + newMypizza.fullDetails());
 
    var inputEstate = $("input#my-estate").val();
    var inputPhone = $("input#my-phone").val();
@@ -91,7 +95,7 @@ $(document).ready(function(){
     $('#price').html(totalPrice);
  }
  else{
-   $('p').html('Enter valid inputs');
+   $('h3').html('Enter valid inputs');
    
  }
   }
@@ -101,6 +105,7 @@ $(document).ready(function(){
 
   $("#submit").click(function() {
       $(".content1").hide();
+      $('#delivering').hide();
       $(".myOrder").show();
 
     });
