@@ -95,7 +95,8 @@ $(document).ready(function(){
     $('#price').html(totalPrice);
  }
  else{
-   $('h3').html('Enter valid inputs');
+  alert("Ensure you have checked the size and type");
+   $('h3').html('Re-check the inputs');
    
  }
   }
