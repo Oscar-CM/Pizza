@@ -104,16 +104,18 @@ $(document).ready(function(){
       $(".myOrder").show();
 
     });
-  $("#view").click(function(){
-    $('h3').text(crustInput.length + newMypizza.fullDetails());
-  });
 
   $("#deliver").click(function(){
     $(".myOrder").hide();
     $(".delivering").show();
 
   });
+  $("#deliver-now").click(function(){
+    alert("Your pizza will be delivered, Thank you!" );
+    $('.delivering').hide();
+    $(".content1").show();
 
- 
+
+  });
 
 });
